@@ -37,6 +37,7 @@ public class userController {
     public List<Product> insert(@RequestBody User res){
         productRepo.saveAll(res.getProducts());
          User user = userRepo.save(res);
+        System.out.println("xoxoxox");
        return null;
     }
 
